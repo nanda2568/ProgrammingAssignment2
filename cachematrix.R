@@ -1,8 +1,10 @@
-## Put comments here that give an overall description of what your
-## functions do
+## This R script is created with two function to cache and calculate
+##     inverse of a squate matrix.
+## Assumption: supplied matrix is always invertible.
+## Programming Assignment# 2
+## Date: 12/27/2015
 
-## Write a short comment describing this function
-
+## Following function makes a cache list with matrix and its inverse
 makeCacheMatrix <- function(x = matrix()) {
   m <- NULL
   set <- function(y) {
@@ -18,8 +20,7 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
-
+## This function calculates matrix inverse if cache is empty
 cacheSolve <- function(x, ...) {
      ## Return a matrix that is the inverse of 'x'
   m <- x$getInvMatrix()
